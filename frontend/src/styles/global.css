@@ -1,0 +1,120 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; background: #f7f7f8; color: #111; }
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { padding: 10px 12px; border-radius: 12px; border: 1px solid #e5e7eb; background: #111; color: #fff; font-weight: 700; cursor: pointer; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.input { padding: 10px 12px; border-radius: 12px; border: 1px solid #e5e7eb; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border-bottom: 1px solid #eee; padding: 8px; text-align: left; font-size: 14px; }
+.badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #f1f5f9; border: 1px solid #e5e7eb; font-size: 12px; }
+.kpi { display: flex; gap: 8px; flex-wrap: wrap; }
+.btnLight {
+  background: white;
+  color: #111;
+}
+
+.tableWrap {
+  max-height: 520px;          /* 원하는 높이로 조절 */
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.btnLight {
+  background: white;
+  color: #111;
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.calHead {
+  font-weight: 800;
+  font-size: 13px;
+  color: #374151;
+  padding: 6px 8px;
+}
+
+.calCell {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 8px;
+  text-align: left;
+  background: white;
+  cursor: pointer;
+  min-height: 98px;
+}
+
+.calCell:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.calOut {
+  opacity: 0.5;
+}
+
+.calDate {
+  font-weight: 900;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.calLines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calLine {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.calZone {
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.calName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calNote {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #b45309;
+}
+
+.calOk { }
+.calPartial { border-color: #f59e0b; }
+.calFailed { border-color: #ef4444; }
+.calEmpty { }
+
+.calHighlight {
+  outline: 3px solid #111;
+  outline-offset: 0;
+}
+
+.calDim {
+  opacity: 0.25;
+}
